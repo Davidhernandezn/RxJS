@@ -10,15 +10,36 @@ export default () => {
    const hello = new Observable((observer) => {
         observer.next("Hello");
         observer.next("Word");
-        observer.complete(); // Finalizar la emisión de eventos
+
+        setTimeout(() =>{
+        observer.next('TIME!');
+        //PARA EVITAR MEMORY LICKS  HAY QUE CANCELAR
+        observer.complete(); // Finalizar la emisión de eventos (INCICA PARA CERRAR LA SUSCRIPCION)
+        }, 2000);
+        
+
     });
 
+
+
+ //const subscribe2 = hello.subscribe(evt => displayLog(evt)); //FORMA REDUCIDA
+ //subscribe2.unsubscribe();//CANCELAR SUSCRIPCIÓN
+ 
+ //ESTRUCTURA DE UN OBSERVADOR
  // Suscribirse a la secuencia de eventos y mostrar los datos en el HTML
  const subscription = hello.subscribe({
     next: (evt) => displayLog(evt),
     error: (err) => console.error('Error: ', err),
     complete: () => console.log('Observable completado')
 });}
+
+
+
+
+
+
+
+
 
     //suscripcion al observavble
     //hrllo al ser observable puede llamar al metodo suscribe
