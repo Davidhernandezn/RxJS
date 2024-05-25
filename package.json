@@ -1,8 +1,10 @@
 {
+  "type": "module",
   "name": "rxjs-school",
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode=development"
   },
@@ -11,7 +13,7 @@
   "devDependencies": {
     "webpack": "^4.27.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.11.3"
   },
   "dependencies": {
     "rxjs": "^6.4.0"

@@ -1,7 +1,11 @@
-/* Utility to show content into the view */
-export const displayLog = (content)=> {
-    let element = document.createElement('div');
-    element.innerHTML = content;
-    const logContainer = document.getElementById("log-container");
-    logContainer.appendChild(element);
-}
+// utils.js
+export const displayLog = (message) => {
+    const logContainer = document.getElementById('logContainer');
+    if (logContainer) {
+        const logElement = document.createElement('div');
+        logElement.textContent = message;
+        logContainer.appendChild(logElement);
+    } else {
+        console.warn('No se encontró el contenedor de logs en el HTML.');
+    }
+};
