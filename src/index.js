@@ -4,7 +4,8 @@
 
 //import example from './create';//OBSERVERS
 //import example from './create_from'; //    USO DE FROM QUE PERMITE CONVERTIR PROMISE EN OBSERVABLES
-import example from './create_rage_of';
+//import example from './create_rage_of'; //OF: EMITE UN A SECUENCIA VARIABLE DE OBJETOS DE DISTINTA TIPOLOGIA,  RANGE: secuencia de datos de inicio y numero de valores
+import example from './create_interval_time';
 
 //run stuff
 example();
