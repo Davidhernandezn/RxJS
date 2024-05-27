@@ -1,6 +1,6 @@
 // utils.js
 export const displayLog = (message) => {
-    const logContainer = document.getElementById('logContainer');
+    const logContainer = document.getElementById('displayLog');
     if (logContainer) {
         const logElement = document.createElement('div');
         logElement.textContent = message;

@@ -1,4 +1,4 @@
-import { displayLog } from "./utils";
+import { displayLog } from "../utils";
 import { of, range } from 'rxjs'
 
 export default () => {

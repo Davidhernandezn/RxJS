@@ -1,11 +1,11 @@
 import { fromEvent } from 'rxjs';
-import { displayLog } from './utils';
+import { displayLog } from '../utils';
 
 /**
 *OBSERVABLE QUE ASOCIADO A UN EVENT TARGET, PARA EMITIR LOS EVENTOS GENERADOS
 *CANALIZA EVENTOS DEL DOM 
 *O EVENT EMITERS DE NODE
-*REACCIONAR A EVENTOS DE LA INTERFAZ 
+*REACCIONAR A EVENTOS DE LA INTERFAZ  
 */
 
 export default () => {

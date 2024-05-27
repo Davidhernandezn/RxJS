@@ -1,5 +1,5 @@
 import { interval, timer } from 'rxjs'
-import { displayLog } from './utils'
+import { displayLog } from '../utils'
 
 export default() =>{
 /*INTERVAL: SECUENCIAS DE VALORES CADA CIERTO INTERVALO.
